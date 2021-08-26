@@ -1,0 +1,408 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+/* ----fonts--- */
+/* font-family: 'Dancing Script', cursive;- header 
+font-family: 'Acme', sans-serif; -paragraph
+font-family: 'Arvo', serif;--menue*/
+
+
+/* ---main container---- */
+.main-container{
+    width: 1220px;
+    margin: auto;
+}
+
+
+/* --------Navigation and Logos----- */
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+  
+    
+}
+.logo{
+   display: flex;
+   width: 20%;
+}
+
+.navbar ul{
+    flex: 1;
+    text-align: right;
+    display: inline-block;
+
+}
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    padding:5px;
+    color: #fff;
+    font-family: 'Arvo', serif;
+    text-transform: uppercase;
+}
+a:hover{
+    color: rgb(0, 247, 255);
+    border-bottom: 1px solid rgb(238, 255, 0);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ---------Header Before------- */
+header{
+    background:url(home-bg.jpg) ;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    position: relative;
+}
+header::before{
+    content: "";
+    position: absolute;
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+
+/* ----Main header text---- */
+.main-text{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-text h1{
+    color: yellow;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+}
+.main-text p{
+    text-align: center;
+    width: 50%;
+    color: rgb(199, 199, 199);;
+    font-weight: 100;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-family: 'Acme', sans-serif;
+}
+.main-text .btn-home{
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: orange;
+    font-family:'Acme', sans-serif;
+    background: transparent;
+    border: 1px solid orange;
+    border-radius: 23px;
+    transition:  0.4s;
+    cursor: pointer;
+}
+.main-text, .btn-home:hover{
+    color: #fff;
+}
+/* -----About Section----- */
+.about-section{
+    background-color: #001a33;
+   }
+ .primary-heading{
+     font-size: 2.4rem;
+     color: rgb(217, 255, 0);
+     text-align: center;
+     padding-top: 70px;
+     padding-bottom: 60px;
+     font-family: 'Acme', sans-serif;
+     
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.left-text{
+    flex: 1;
+    margin-bottom: 20px;
+   
+}
+.left-text, h2{
+     font-size: 2.1rem;
+     padding-bottom: 10px;
+     color: #fff;
+     font-family:'Acme', serif;
+   
+}
+.left-text p{
+    padding: 5px;
+    margin-bottom: 45px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    line-height: 24px;
+    font-family: 'Dancing Script', cursive;
+    color: #a3a39b;
+}
+.about-img{
+    flex: 1;
+    position: relative;
+}
+
+.about-img img{
+    width: 548px;
+    margin-left: 25px;
+    border-radius: 24px;
+}
+.about-img h3{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 32%;
+    font-family:'Dancing Script', cursive; 
+    font-size: 25px;
+}
+.left-text .btn{
+    padding: 15px;
+    font-size: 18px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: orange;
+    font-family:'Acme', sans-serif;
+    background: transparent;
+    border: 1px solid orange;
+    border-radius: 23px;
+    transition:  0.4s;
+}
+.btn:hover{
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+/* ----Our Menue---- */
+.menu-section{
+    background-color: #001a33;
+}
+.menu-img{
+    display: flex;
+    align-items: center;
+    flex-basis: 50%;
+    min-width: 100px ;
+    margin-bottom: 40px;
+    position: relative;
+   
+}
+.menu-img::after{
+    content: "";
+    position: absolute;
+    top: 120%;
+    border-bottom: 3px dotted #042c52  ;
+    width: 95%;
+}
+.menu-img img{
+    border-radius: 10px;
+}
+.menu-img p{
+    flex: 1;
+    text-align: right;
+    margin-right: 30px;
+    color: orange;
+    font-family:'Dancing Script', cursive; 
+}
+.menu-img h3{
+    margin-left: 20px;
+    color: #fff;
+     font-size: 17px;
+     font-family:'Arvo', serif;
+}
+
+/* -----Feedback-section----- */
+.feedback-section{
+    background-color: #001a33;
+}
+.card{
+    flex-basis: 30%;
+    margin-left: 20px;
+    margin-right: 20px;
+    min-width: 100px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 20px;
+    /* box-shadow: 1px 1px 7px 1px #21425c; */
+    box-shadow: 1px 1px 7px 1px #011524;
+    border-radius: 15px;
+    transition:  0.4s;
+}
+.card:hover{
+    transform: translateY(-8px);
+}
+.card img{
+    width: 15%;
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-top: 20px;
+    
+    
+}
+.rowbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    margin-bottom: -20px;
+}
+.rowbox h3{
+    color:orange;
+    font-family:'Acme', sans-serif;
+    font-weight: 200;
+}
+.card h5{
+    color: rgb(255, 255, 255);
+    font-family:'Arvo', serif;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.card p{
+    color: #b8b5b5;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: start;
+    font-family:'Dancing Script', cursive;
+
+}
+.rating{
+    margin-bottom: 30px;
+    color: yellow;
+
+}
+
+/* -----chef Section------- */
+.chef-section{
+    background-color:#001a33 ;
+    margin-bottom: 30px;
+}
+.cart-2{
+    flex-basis: 30%;
+    min-width: 100px;
+    position: relative;
+   margin: auto;
+   margin-bottom: 100px;
+}
+
+.cart-2 img{
+    border-radius: 15px;
+}
+.info-text{
+    position: absolute;
+    left: 15%;
+    top: 88%;  
+    background-color: #002036f1;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+    transition: 0.4s;
+   
+}
+.info-text:hover{
+    transform: translateY(-3px);
+}
+.info-text h3{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(252, 77, 14);
+    font-weight: 100;
+    font-family:'Acme', sans-serif;
+    padding-top: 5px;
+}
+.info-text p{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 5px;
+    color: #fff;
+    font-family:'Dancing Script', cursive;
+}
+
+/* ----footer Section---- */
+.footer-section{
+    margin-top: -30px;
+    background: url("footer-bg.jpg");
+    background-size: cover;
+    height: 375px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+}
+
+
+.footer-section::before{
+    content: '';
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+
+}
+.col-4{
+    flex-basis: 30%;
+    min-width: 100px;
+    margin: auto;
+   
+}
+.foot{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.foot h5{
+    font-size: 35px;
+    font-family: 'Acme', sans-serif;
+    font-weight: 200;
+    margin-bottom: 5px;
+    color: yellow;
+}
+.foot p{
+    font-size: 22px;
+    color:#dddddd;
+    font-family:'Dancing Script', cursive;
+    line-height: 28px;
+}
+.contact{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+   
+}
+.contact img{
+    width: 60px;
+    margin: 0 30px;
+    margin-bottom: 20px;
+}
+.copyright{
+    text-align: center;
+    font-size: 20px;
+    color: #dddddd;
+    padding-top: 10px;
+    font-family:'Acme', sans-serif;
+
+}
